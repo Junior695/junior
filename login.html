@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0;
+    }
+
+    #div-1 {
+        height: 400px;
+        background-color: #253365;
+    }
+
+    #div-2 {
+        height: 100%;
+        background-color: #F1F1F1;
+    }
+
+    #login {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        border-radius: 10px;
+        width: 350px;
+        height: 450px;
+        background-color: white;
+        position: relative;
+        top: -200px;
+        -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    #div-logo {
+        width: 330px;
+        height: 130px;
+        margin: 5px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #div-form {
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        width: 330px;
+        align-items: center;
+        margin: 5px 0px 0px 10px;
+    }
+
+    .input {
+        width: 80%;
+        padding: 8px 8px 8px 8px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+
+    #div-remember {
+        display: flex;
+        margin: 10px 175px 10px 0px;
+    }
+
+    #remember {
+        font-size: 10px;
+        color: #ACACAC;
+        text-align: left;
+        margin: 3px 0px 0px 3px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .label {
+        font-size: 12px;
+        color: #ACACAC;
+        margin-top: 10px;
+        align-self: flex-start;
+        padding-left: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #botao {
+        width: 80%;
+        background-color: #263466;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        font-weight: 90;
+        font-weight: bold;
+    }
+
+    .checkbox {
+        height: 15px;
+        width: 15px;
+        background-color: rgb(241, 229, 229);
+
+    }
+
+    #div-register {
+        display: flex;
+        padding: 0px;
+        width: 80%;
+    }
+
+    #register {
+        align-self: flex-start;
+        font-size: 10px;
+        color: #ACACAC;
+        margin-right: 88px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #forgot {
+        font-size: 10px;
+        color: #ACACAC;
+        align-self: flex-end;
+        padding-left: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #div-back {
+        display: flex;
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    #back {
+        align-self: flex-start;
+        font-size: 10px;
+        color: #ACACAC;
+        margin-right: 74px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .fa-arrow-left {
+        align-self: flex-start;
+        font-size: 10px;
+        color: #ACACAC;
+        margin-right: 5px;
+    }
+</style>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="div-1">
+
+    </div>
+    <div id="div-2">
+        <div id="login">
+            <div>
+                <div id="div-logo">
+                    <img src="logo.png" id="logo">
+                </div>
+            </div>
+            <div id="div-form">
+                <label for="username" class="label">Username or email</label>
+                <input type="text" name="username" class="input">
+                <label for="password" class="label">Password</label>
+                <input type="password" name="password" class="input">
+                <div id="div-remember">
+                    <input type="checkbox">
+                    <label type="text" id="remember">Remember me</label>
+                </div>
+                <input type="button" id="botao" value="LOGIN">
+                <div id="div-register">
+                    <label type="text" id="register">Register</label>
+                    <label type="text" id="forgot">Forgot your password?</label>
+                </div>
+                <div id="div-back">
+                    <i class="fas fa-arrow-left"></i>
+                    <label type="text" id="back">Back to WPBrigade</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
