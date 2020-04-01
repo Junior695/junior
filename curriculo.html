@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        margin: 0 auto;
+    }
+    /* DIVS =============================================*/
+    #curriculo{
+        border: 1px solid black;
+        background-color: black;
+        margin: 0 auto;
+        width: 1000px;
+        height: 1283px;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: 
+                        'perfil conteudoGeral'
+                        'perfil conteudoGeral'
+                        'sobreMim conteudoGeral'
+                        'dadosPessoais conteudoGeral';
+    }
+
+    #conteudoGeral{
+        margin: 0 auto;
+        background-color: #ffff;
+        grid-area: conteudoGeral;
+        width: 100%;
+        height: 100%;
+    }
+
+    #perfil{
+        background-color: #FF7949;
+        width: 100%;
+        height: 521px;
+        grid-area: perfil;
+    }
+
+    #sobreMim{
+        background-color: #4FADC9;
+        width: 100%;
+        height: 430px;
+        grid-area: sobreMim;
+    }
+
+    #dadosPessoais{
+        background-color: #35768A;
+        width: 100%;
+        height: 332px;
+        grid-area: dadosPessoais;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #educacao{
+        width: 100%;
+        height: 300px;
+        padding: 20px 0 0 0;
+        margin: 0 auto;
+    }
+
+    #experiencia{
+        width: 100%;
+        height: 300px;
+        padding: 20px 0 0 0;
+    }
+
+    #habilidades{
+        width: 100%;
+        height: 450px;
+        padding: 20px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #interesses{
+        width: 100%;
+        height: 150px;
+        padding: 20px 0 0 0;
+    }
+
+  
+
+    /* TUDO DA LINHA DIVISÓRIA ===================================== */
+
+    .linhaDivisoria{
+        display: flex;
+        width: 100%;
+        height: 20px;
+        
+    }
+
+    .linha{
+        width: 510px;
+        height: 20px;
+        background-color: #B0B0B0;
+        margin: 15px 0 0 20px;
+    }
+
+    .subtitulo{
+        color: #FF7949;
+        margin: 5px 0 0 20px;
+        font-family: 'Francois One', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .bolinhaIcone{
+        background-color: #B0B0B0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 0 0 25px 620px;
+    }
+
+    .icone{
+        color: #FDFDFD;
+        font-size: 28px;
+        margin: 10px 0 0 8px;
+    }
+    
+    #linhaHabilidade{
+        width: 500px !important; 
+    }
+
+    #linhaExperiencia{
+        width: 340px !important; 
+    }
+    
+    #iconeCoracao{
+        font-size: 30px !important;
+        margin: 10px 0 0 10px !important;
+    }
+
+    /* ================================================================ */
+
+    /* DIVS DE CONTEUDO =================================================== */
+    #conteudoInteresses{
+        display: flex;
+        width: 90%;
+        height: 20%;
+        margin: 0 0 0 30px;
+        color:  #35768A;
+        font-family: 'Francois One', sans-serif;
+        font-weight: bold;
+        align-content: flex-end;
+        justify-content: space-between;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    #conteudoHabilidades{
+        width: 90%;
+        height: 12%;
+        margin: 25px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #conteudoExperiencia{
+        margin: 25px 0 0 12px;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experiencia{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 10px 0 0 0px;
+    }
+    
+    .tituloExperiencia{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 100%;
+    }
+
+    .informacaoExperiencia{
+        margin: 10px 0 0 0;
+        width: 65%;
+        height: 100%;
+        display: flex;
+    }
+    
+    #conteudoEducacao{
+        margin: 25px 0 0 12px;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .educacao{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 10px 0 0 0px;
+    }
+    
+    .tituloEducacao{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 100%;
+    }
+
+    .informacaoEducacao{
+        margin: 10px 0 0 0;
+        width: 65%;
+        height: 100%;
+        display: flex;
+    }
+    /* ==================================================================== */
+
+    /* TEXTOS DE CONTEUDO =================================================== */
+    .subtituloHabilidades{
+        color:  #35768A;
+        font-family: 'Francois One', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .textoHabilidades{
+        font-family: 'Francois One', sans-serif;
+        font-size: 10px;
+        margin: 5px 0 0 0;
+    }
+
+    .nomeExperiencia{
+        margin: 10px 0 0 10px;
+        font-family: 'Francois One', sans-serif;
+        color:  #35768A;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .dataExperiencia{
+        font-family: 'Francois One', sans-serif;
+        font-size: 15px;
+        margin: 0 0 0 10px;
+    }
+
+    .textoInformacao{
+        font-family: 'Francois One', sans-serif;
+        font-size: 10px;
+        margin: 10px 0 0 10px;
+    }
+
+    .nomeEducacao{
+        margin: 10px 0 0 10px;
+        font-family: 'Francois One', sans-serif;
+        color:  #35768A;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .dataEducacao{
+        font-family: 'Francois One', sans-serif;
+        font-size: 15px;
+        margin: 0 0 0 10px;
+    }
+
+    .textoEducacao{
+        font-family: 'Francois One', sans-serif;
+        font-size: 10px;
+        margin: 10px 0 0 10px;
+    }
+    /* ==================================================================== */
+
+    
+    #img-perfil {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 70px 0px 20px 75px;
+    }
+
+    .fonte-perfil {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    #nome {
+        margin: 0px 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #cargo {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 22px;
+    }
+
+    #texto-sobreMim {
+        text-align: center;
+        margin: 70px 0px 20px 0px;
+    }
+
+    #paragrafo-sobreMim {
+        text-align: justify;
+        margin: 0px 30px;
+        font-size: 14px;
+    }
+
+    #div-telefone {
+        display: flex;
+        margin: 60px 10px 20px 30px;
+    }
+
+    .div-dados {
+        display: flex;
+        margin: 0px 10px 20px 30px;
+    }
+
+    .titulo-dados {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .informacao-dados {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 14px;
+    }
+
+    #titulo-telefone {
+        margin-right: 11px;
+    }
+
+    #titulo-email {
+        margin-right: 26px;
+    }
+
+    #titulo-website {
+        margin-right: 16px;
+    }
+
+    #titulo-endereco {
+        margin-right: 5px;
+    }
+
+    /*==================================*/
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+    <title>Curriculo</title>
+</head>
+<body>
+   <div id="curriculo">
+    <div id="perfil">
+        <img id="img-perfil" src="perfil.jpg">
+        <h1 id="nome" class="fonte-perfil">Gilmar Santos Junior</h1>
+        <p id=cargo class="fonte-perfil">Auxiliar de Escritório</p>
+    </div>
+    <div id="sobreMim">
+        <h3 id="texto-sobreMim" class="fonte-perfil">Sobre mim</h3>
+        <p id="paragrafo-sobreMim" class="fonte-perfil">Tenho facilidade em me entrosar com as pessoas e gosto muito de programar Front End, 
+														embora meu objetivo seja me tornar um prgramador Full Stack.</p>
+    </div>
+    <div id="dadosPessoais" class="fonte-perfil">
+        <div id="div-telefone">
+            <span class="titulo-dados" id="titulo-telefone">Telefone: </span>
+            <span class="informacao-dados">(48)99979-4798</span></div>
+        <div class="div-dados">
+            <span class="titulo-dados" id="titulo-email"> E-mail: </span>
+            <span class="informacao-dados">gilmar.junior@edu.univali.br</span>
+        </div>
+        <div class="div-dados">
+            <span class="titulo-dados" id="titulo-website">Website: </span>
+            <span class="informacao-dados">www.samplewebsite.com</span>
+        </div>
+        <div class="div-dados">
+            <span class="titulo-dados" id="titulo-endereco">Endereço: </span>
+            <span class="informacao-dados">Rua Geraldo Rebelo, 1712
+                Bairro Universitário
+                88200-000 Tijucas
+                Santa Catarina</span>
+        </div>
+    </div>
+        <div id="conteudoGeral">
+            <div id="educacao">
+                <div class="linhaDivisoria">
+                    <div class="subtitulo">Educação</div>
+                    <div class="linha"></div>
+                    <div class="bolinhaIcone">
+                        <i class="fas fa-graduation-cap icone" ></i>
+                    </div>
+                </div>
+                <div id="conteudoEducacao">
+                    <div class="educacao">
+                        <div class="tituloEducacao">
+                            <h2 class="nomeEducacao">UNIVALI</h2>
+                            <span class="dataEducacao">2020 - 2025</span>
+                        </div>
+                        <div class="informacaoEducacao">
+                            <span class="textoEducacao">Universidade do Vale do Itjaí - Cursando 1º período de Desenvimento de Sistemas para Internet.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencia">
+                <div class="linhaDivisoria">
+                    <div class="subtitulo">Experiência De Trabalho</div>
+                    <div class="linha" id="linhaExperiencia"></div>
+                    <div class="bolinhaIcone">
+                        <i class="fas fa-cogs icone" ></i>
+                    </div>
+                </div>
+                <div id="conteudoExperiencia">
+                    <div class="experiencia">
+                        <div class="tituloExperiencia">
+                            <h2 class="nomeExperiencia">Radical Style</h2>
+                            <span class="dataExperiencia">2013 - Atual</span>
+                        </div>
+                        <div class="informacaoExperiencia">
+                            <span class="textoInformacao">Responsavel por atender os clientes e representantes, dando suporte no que for necessário.</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="habilidades">
+                <div class="linhaDivisoria">
+                    <div class="subtitulo">Habilidades</div>
+                    <div class="linha" id="linhaHabilidade"></div>
+                    <div class="bolinhaIcone">
+                        <i class="fas fa-paint-brush icone" ></i>
+                    </div>
+                </div> 
+                <div id="conteudoHabilidades">
+                    <span class="subtituloHabilidades">Cooperativo</span>
+                    <span class="textoHabilidades"> Tenho facilidade para trabalhar em equipe.</span>
+                </div> 
+                <div id="conteudoHabilidades">
+                    <span class="subtituloHabilidades">Autodidata</span>
+                    <span class="textoHabilidades">Sempre que encontro um problema ou algo que me interesse procuro aprender sobre o assunto</span>
+                </div>  
+            </div>
+
+            <div id="interesses">
+                <div class="linhaDivisoria">
+                    <div class="subtitulo">Interesses</div>
+                    <div class="linha"></div>
+                    <div class="bolinhaIcone">
+                        <i class="fas fa-heart icone" id="iconeCoracao"></i>
+                    </div>
+                </div>
+                <div id="conteudoInteresses">
+                    <span>Séries</span>
+                    <span>Filmes</span>
+                    <span>Músicas</span>
+                    <span>Programação</span>
+                </div>
+                <div id="conteudoInteresses">
+                    <span>Jogos Eletrônicos</span>
+                    <span>Ciclismo</span>
+					<span>Praia</span>
+					<span>Automobilismo</span>
+                </div>
+            </div>
+
+        </div>
+   </div> 
+</body>
+</html>
