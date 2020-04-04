@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        body{
+            margin: 0 auto;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        table{
+            border: 8px solid #DDDDDD;
+        }
+    
+        tr td{
+            border-right: 8px solid #DDDDDD;
+            border-left: 8px solid #DDDDDD;
+        }
+    
+        #ultimo td{
+            border-bottom: 8px solid #DDDDDD;
+        }
+    
+        table, th, td {
+            border-collapse: collapse;
+            text-align: center;
+        }
+    
+        .fundo{
+            background-color: #F7F7F7;
+        }
+    
+        .linha td, th {
+            padding: 20px;
+        }
+        
+        .linha-media td{
+            padding: 10px;
+        }
+    
+        #titulo-verde{
+           
+            color: #60CB71;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        #titulo-roxo{
+            color: #5F5DAC;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        #titulo-azul{
+            color: #1F81D3;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        #botao-verde{
+            color: #60CB71;
+            background-color: #FFFF;
+            border: 1px solid #60CB71;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 5px 5px 5px 5px;
+        }
+    
+        #botao-roxo{
+            color: #5F5DAC;
+            background-color: #FFFF;
+            border: 1px solid #5F5DAC;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 5px 5px 5px 5px;
+        }
+    
+        #botao-azul{
+            color: #1F81D3;
+            background-color: #FFFF;
+            border: 1px solid #1F81D3;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 5px 5px 5px 5px;
+        }
+    
+        #preco-verde{
+            color: #ffff;
+            background-color: #60CB71;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        #preco-roxo{
+            color: #ffff;
+            background-color: #5F5DAC;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        #preco-azul{
+            color: #ffff;
+            background-color: #1F81D3;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        th {
+            border: 8px solid #DDDDDD;
+        }
+        
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="tabela">
+        <thead > 
+            <tr class="linha"></tr>
+                <th id="titulo-verde">Basic</th>
+                <th id="titulo-roxo">Standard</th>
+                <th id="titulo-azul">Premium</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="linha-media background">
+                <td id="preco-verde">$99</td>
+                <td id="preco-roxo">$99</td>
+                <td id="preco-azul">$99</td>
+            </tr>
+            <tr>
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr class="fundo">
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr >
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr class="fundo">
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr >
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr class="fundo">
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr>
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr class="fundo">
+                <td>option</td>
+                <td>option</td>
+                <td>option</td>
+            </tr>
+            <tr id="ultimo" class="linha">
+                <td>
+                    <div>
+                        <button id="botao-verde"> PURCHASE </button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button id="botao-roxo"> PURCHASE </button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button id="botao-azul"> PURCHASE </button>
+                    </div>
+                </td>
+            </tr>
+            <div class="linha_colorida"></div>
+        </tbody>
+    </table>
+</body>
+</html>
