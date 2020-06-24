@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>teste</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-size: 20px;
+            }
+            
+            .width-100{
+                width: 100%;
+            }
+            .height-400{
+                height: 400px;
+            }
+            .height-60{
+                height: 60px;
+            }
+            .height-120{
+                height: 120px;
+            }
+            .top{
+                background: #5995DA;
+            }
+            .header{
+                background: #B2D6FF;
+                text-align: center;
+            }
+            .content{
+                background-color: #EAEDF0;
+                text-align: center;
+            }
+            .signup{
+                background: #D6E9FE;
+                text-align: center;
+            }
+            .feature1{
+                width: 33%;
+                float: left;
+                background: #F5CF8E;
+                text-align: center;
+            }
+            .feature2{
+                width: 33%;
+                float: left;
+                background: #F09A9D;
+                text-align: center;
+            }
+            .feature3{
+                width: 33%;
+                float: left;
+                background: #C8C6FA;
+                text-align: center;
+            }
+            .hide{
+                display: none;
+            }
+            .block{
+                display: block;
+            }
+
+            /*tablets*/
+            @media screen and (max-width: 1366px) {
+                .responsive{
+                    width: 50%;
+                    float: left;
+                }
+                .hide{
+                    display: block;
+                }
+                .block{
+                    display: none;
+                }
+            }
+
+            /*celulares*/
+            @media screen and (max-width: 640px) {
+                .responsive{
+                    width: 100%;
+                    float: none;
+                }
+                .signup, feature1{
+                    height: 120px;
+                }
+            }
+            .clearbooth{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="width-100 height-60 top"></div>
+        <div class="width-100 height-120 header">HEADER</div>
+        <div class="width-100 height-400 content hide">CONTENT</div>
+        <div class="width-100 height-120 signup hide responsive">SIGN UP</div>
+        <div class="width-100 height-120 feature1 responsive">FEATURE1</div>
+        <div class="width-100 height-120 feature2 responsive">FEATURE2</div>
+        <div class="width-100 height-120 feature3 responsive">FEATURE3</div>
+        <div class="width-100 height-120 signup block responsive">SIGN UP</div>
+        <div class="clearbooth"></div>
+        <div class="width-100 height-400 content block">CONTENT</div>
+        
+
+    </body>
+</html>
