@@ -1,0 +1,54 @@
+@import url(font-awesome-4.5.0/css/font-awesome.css);
+body {
+    margin: 0px;
+}
+
+.bar {
+    height: 115px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icons {
+    margin: 10px;
+    position: relative !important;
+    font-size: 24px;
+    border-radius: 3px;
+    color: #E9A721;
+}
+
+.a-icons, .a-icons:active, .a-icons:focus {
+    text-decoration: none !important;
+    color: #E9A721;
+    transition: all 0.3s ease-in-out;
+}
+
+.a-icons:hover {
+    color: #127849;
+}
+
+.text-slider {
+    font-size: 24px;
+}
+
+.box-service {
+    color: #127849;
+}
+
+.title-service{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.text-service {
+    margin-right: 10px;
+    color: black;
+}
+.form-rastreio{
+    margin-top: 120px;
+}
+.form-contato{
+    margin-top: 80px;
+}
